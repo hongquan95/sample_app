@@ -27,7 +27,6 @@
 .rubocop_disabled.yml
 .rubocop_enabled.yml
 /bin/*
-/config/environments/production.rb
 /config/puma.rb
 /config/spring.rbgit
 Gemfile.lock
@@ -37,3 +36,20 @@ Guardfile
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+
+# Use for Chapter 12
+app/views/user_mailer/password_reset.html.erb
+app/views/user_mailer/password_reset.text.erb
+
+# Use for send email when deloy on Heroku
+config/environments/production.rb
+# Use for test
+test/models/user_test.rb
+test/mailers/user_mailer_test.rb
+test/mailers/previews/user_mailer_preview.rb
+test/integration/users_signup_test.rb
+test/fixtures/users.yml
+test/controllers/account_activations_controller_test.rb
+test/helpers/sessions_helper_test.rb
+config/environments/test.rb
+
