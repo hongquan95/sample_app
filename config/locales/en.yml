@@ -96,6 +96,7 @@ en:
       signupnow: "Sign up now!"
       login: "Log in"
       remember: "Remember me on this computer"
+      forgotpass: "(forgot password)"
     create:
       invalid: "Invalid email/password combination"
       notice: "Account not activated. Check your email for the activation link."
@@ -127,21 +128,37 @@ en:
     destroy:
       notice: "User deleted"
       fail: "Delete fail"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      updated: "Update password"
+    create:
+      notice: "Email sent with password reset instructions"
+      notfound: "Email address not found"
+    update:
+      case3: "can't be empty"
+      case4: "Password has been reset."
+      expired: "Password reset has expired."
   account_activations:
     edit:
       activated: "Account activated!"
       unactivated: "Invalid activation link"
   user_mailer:
     account_activation:
-      titile: "Sample App"
+      title: "Sample App"
       notice: "Welcome to the Sample App! Click on the link below to activate your account:"
       activation: "Account activation"
       active: "Activate"
     password_reset:
+      title: "Password reset"
       greeting: "Hi"
       destination: "to@example.org"
-
-
-
-
+      reset: "Reset password"
+      p1: "To reset your password click the link below:"
+      p2: "This link will expire in two hours."
+      p3: "If you did not request your password to be reset, please ignore this email and
+      your password will stay as it is."
 
