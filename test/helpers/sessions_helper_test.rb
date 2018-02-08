@@ -17,8 +17,4 @@ class SessionsHelperTest < ActionView::TestCase
     assert_nil current_user
   end
 
-  test "current_user returns no user when session is nil" do
-    assert_nil current_user
-    assert !is_logged_in?
-  end
 end
