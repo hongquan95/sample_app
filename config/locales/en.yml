@@ -32,7 +32,7 @@
 en:
   layouts:
     application:
-      content: " | Ruby on Rails Tutorial Sample App"
+      content: "| Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
       title: "Home"
