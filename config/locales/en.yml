@@ -47,6 +47,9 @@ en:
       link_name_2: "Michael Hartl"
       href_3: "http://news.railstutorial.org/"
       link_name_3: "New"
+  shared:
+    error_messages:
+      content: "The form contains"
   static_pages:
     home:
       title: "Home"
@@ -87,5 +90,9 @@ en:
     new:
       title: "Sign up"
       p1: "This will be a signup page for new users."
+      confirm: "Confirmation"
+      submit: "Create my account"
+    create:
+      welcome: "Welcome to the Sample App!"
 
 
