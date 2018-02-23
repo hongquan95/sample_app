@@ -6,4 +6,12 @@ class User < ApplicationRecord
   validates :password, presence: true, length: {minimum: Settings.password_minlen}
   before_save{self.email = email.downcase}
   has_secure_password
+
+  class << self
+    # Returns the hash digest of the given string.
+    def digest string
+      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
+      BCrypt::Password.create(string, cost: cost)
+    end
+  end
 end

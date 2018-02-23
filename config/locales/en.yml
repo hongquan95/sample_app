@@ -38,6 +38,10 @@ en:
       home_nav: "Home"
       help_nav: "Help"
       log_in_nav: "Log in"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
     footer:
       about_nav: "About"
       contact_nav: "Contact"
@@ -86,6 +90,14 @@ en:
       p1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link_name: "contact page"
       href: "http://www.railstutorial.org/contact"
+  sessions:
+    new:
+      title: "Log in"
+      signupnow: "Sign up now!"
+      login: "Log in"
+    create:
+      invalid: "Invalid email/password combination"
+
   users:
     new:
       title: "Sign up"
