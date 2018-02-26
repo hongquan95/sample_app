@@ -95,6 +95,7 @@ en:
       title: "Log in"
       signupnow: "Sign up now!"
       login: "Log in"
+      remember: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
 
