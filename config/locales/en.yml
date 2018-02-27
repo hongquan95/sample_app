@@ -107,5 +107,23 @@ en:
       submit: "Create my account"
     create:
       welcome: "Welcome to the Sample App!"
+    edit:
+      title: "Edit user"
+      content: "Update your profile"
+      confirm: "Confirmation"
+      savechange: "Save changes"
+      change: "change"
+      require: "Please log in."
+    update:
+      notice: "Profile updated"
+    index:
+      allusers: "All users"
+      require: "Please log in."
+    user:
+      delete: "delete"
+      yousure: "You sure?"
+    destroy:
+      notice: "User deleted"
+      fail: "Delete fail"
 
 
