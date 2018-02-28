@@ -98,6 +98,7 @@ en:
       remember: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+      notice: "Account not activated. Check your email for the activation link."
 
   users:
     new:
@@ -107,6 +108,7 @@ en:
       submit: "Create my account"
     create:
       welcome: "Welcome to the Sample App!"
+      check: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       content: "Update your profile"
@@ -125,5 +127,21 @@ en:
     destroy:
       notice: "User deleted"
       fail: "Delete fail"
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      unactivated: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      titile: "Sample App"
+      notice: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activation: "Account activation"
+      active: "Activate"
+    password_reset:
+      greeting: "Hi"
+      destination: "to@example.org"
+
+
+
 
 

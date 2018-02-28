@@ -3,3 +3,4 @@ name_maxlen: 50
 password_minlen: 6
 avatarsize: 80
 avatarsizeshow: 50
+checked: "1"
