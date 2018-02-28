@@ -1,5 +1,3 @@
 email_maxlen: 255
 name_maxlen: 50
 password_minlen: 6
-avatarsize: 80
-avatarsizeshow: 50

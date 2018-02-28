@@ -1,7 +1,8 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-      <%= t ".content" %> <%= pluralize(@user.errors.size, "error") %>.
+      <%= t ".content" %>
+      <%= pluralize(@user.errors.count, "error") %>.
     </div>
     <ul>
     <% @user.errors.full_messages.each do |msg| %>
