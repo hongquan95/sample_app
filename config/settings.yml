@@ -4,3 +4,4 @@ password_minlen: 6
 avatarsize: 80
 avatarsizeshow: 50
 checked: "1"
+expiredtime: 2
