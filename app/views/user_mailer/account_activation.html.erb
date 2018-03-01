@@ -6,5 +6,5 @@
 <%= t ".notice" %>
 </p>
 
-<%= link_to t(".activate"), edit_account_activation_url(@user.activation_token,
+<%= link_to t(".active"), edit_account_activation_url(@user.activation_token,
   email: @user.email) %>

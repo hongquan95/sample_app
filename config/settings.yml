@@ -5,3 +5,5 @@ avatarsize: 80
 avatarsizeshow: 50
 checked: "1"
 expiredtime: 2
+maxlenpost: 140
+imagesize: 5

@@ -54,8 +54,15 @@ en:
   shared:
     error_messages:
       content: "The form contains"
+    user_info:
+      view: "view my profile"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
   static_pages:
-    home:
+    logged_in:
+      title: "Micropost Feed"
+    not_logged_in:
       title: "Home"
       p: "Welcome to the Sample App"
       p1: "This is the home page for the"
@@ -128,6 +135,8 @@ en:
     destroy:
       notice: "User deleted"
       fail: "Delete fail"
+    show:
+      micropost: "Microposts"
   password_resets:
     new:
       title: "Forgot password"
@@ -161,4 +170,15 @@ en:
       p2: "This link will expire in two hours."
       p3: "If you did not request your password to be reset, please ignore this email and
       your password will stay as it is."
-
+  microposts:
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+      delete: "delete"
+      sure: "You sure?"
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+      fail: "Delete failed"
+  imagesize: "should be less than 5MB"

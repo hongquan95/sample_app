@@ -1,10 +1,5 @@
-<div class="center jumbotron">
-  <h1><%= t ".p" %></h1>
-  <h2>
-    <%= t ".p1" %>
-    <%= link_to t(".link_name"), t(".href") %>
-    <%= t ".p2" %>
-  </h2>
-  <%= link_to t(".sign_up"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<%= link_to image_tag("rails.png", alt: t(".img_logo")), t(".img_href") %>
+<% if logged_in? %>
+  <%= render "static_pages/logged_in" %>
+<% else %>
+  <%= render "static_pages/not_logged_in" %>
+<% end %>
