@@ -17,7 +17,7 @@ class MicropostsController < ApplicationController
     if @micropost.destroy
       flash[:success] = t ".deleted"
     else
-      flash[:success] = t ".fail"
+      flash[:danger] = t ".fail"
     end
     redirect_back fallback_location: root_url
   end

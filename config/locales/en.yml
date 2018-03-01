@@ -59,6 +59,10 @@ en:
     micropost_form:
       placeholder: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
+
   static_pages:
     logged_in:
       title: "Micropost Feed"
@@ -136,7 +140,16 @@ en:
       notice: "User deleted"
       fail: "Delete fail"
     show:
-      micropost: "Microposts"
+      micropost: "Microposts:"
+      view: "view my profile"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    followers:
+      followers: "Followers"
+    following:
+      following: "Following"
   password_resets:
     new:
       title: "Forgot password"
@@ -182,3 +195,6 @@ en:
       deleted: "Micropost deleted"
       fail: "Delete failed"
   imagesize: "should be less than 5MB"
+  relationships:
+    create:
+      error: "Occur error"
