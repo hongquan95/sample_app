@@ -2,6 +2,12 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   attr_accessor :remember_token, :activation_token, :reset_token
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+    foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+    foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
   validates :email, presence: true, length: {maximum: Settings.email_maxlen},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
   validates :name, presence: true, length: {maximum: Settings.name_maxlen}
@@ -68,7 +74,22 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts.sort_by_time_desc
+    Micropost.find_post_of_current_and_followed(following_ids,id).sort_by_time_desc
+  end
+
+  # Follows a user.
+  def follow other_user
+    following << other_user
+  end
+
+  # Unfollows a user.
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  # Returns true if the current user is following the other user.
+  def following? other_user
+    following.include? other_user
   end
 
   private

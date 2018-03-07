@@ -4,7 +4,6 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-
   def index
     @users = User.active_users.paginate page: params[:page]
   end
@@ -43,6 +42,20 @@ class UsersController < ApplicationController
       flash[:danger] = t "users.destroy.fail"
     end
     redirect_to users_url
+  end
+
+  def followers
+    @title = t ".followers"
+    load_user
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def following
+    @title = t ".following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
   end
 
   private
